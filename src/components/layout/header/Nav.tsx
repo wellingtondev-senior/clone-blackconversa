@@ -5,16 +5,18 @@ import { Button } from '../../../components/ui/button';
 
 
 interface NavProps {
-    className:string 
+    className:string;
+    open: boolean;
+
 }
 
-const Nav = ({className }:NavProps) => {
+const Nav = ({className, open }:NavProps) => {
 
     const [screen, setScreen] = useState<"lg" | "sm" | "md" | undefined>("sm")
 
     return (
-        <Menu.Root>
-            <Menu.Lista>
+        <Menu.Root open={open}>
+            <Menu.Lista >
                 <Menu.Link  label="Home"/>
             </Menu.Lista>
             <Menu.Lista>

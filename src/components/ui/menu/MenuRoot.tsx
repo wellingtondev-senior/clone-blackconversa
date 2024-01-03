@@ -10,21 +10,20 @@ interface MenuRootProps extends VariantProps<typeof menu> {
 const menu = tv({
     base: "flex  w-full max-md:hidden items-center justify-center",
     variants: {
-        
-        screen: {
-           
-        }, 
+        open: {
+            true: "left-0",
+            false: "left-[-50px]"
+        },
     },
-    defaultVariants: {
-    }
+    
 
 });
 
 
-export const MenuRoot = ({ className, children,  screen}:MenuRootProps) => {
+export const MenuRoot = ({ className, children, open=true}:MenuRootProps) => {
     return (
         <nav className="w-full max-md:hidden">
-            <ul className={cn(menu({}), className)}>
+            <ul className={cn(menu({open}), className)}>
                {children}
             </ul>
         </nav>

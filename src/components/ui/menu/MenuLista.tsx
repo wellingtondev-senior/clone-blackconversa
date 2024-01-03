@@ -7,7 +7,7 @@ import { tv, VariantProps } from "tailwind-variants";
 
 interface MenuListaProps extends VariantProps<typeof menuList> {
     className?: string;
-    children: ReactNode
+    children: ReactNode;
 }
 
 const menuList = tv({
@@ -25,7 +25,7 @@ const menuList = tv({
     }
 })
 
-export const MenuLista = ({ className, children, screen }: MenuListaProps) => {
+export const MenuLista = ({ className, children, screen}: MenuListaProps) => {
     return (
         <li className={cn(menuList({ screen }), className)}>
             {children}
