@@ -21,7 +21,8 @@ const Home = ({id}:HomeProps) => {
 
             </LazyImage>
             <article className="bg-[#F1F5FF] w-full min-h-screen">
-                ggggg
+                <div></div>
+                <div></div>
             </article>
         </section>
 
