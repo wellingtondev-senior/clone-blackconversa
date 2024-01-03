@@ -1,11 +1,67 @@
-const Nav = () => {
+import { Link, animateScroll as scroll } from 'react-scroll';
+
+
+const Nav = ({ }) => {
+
+
+    const scrollToTop = () => {
+        scroll.scrollToTop({
+            duration: 500, // Tempo da animação em milissegundos
+            smooth: 'easeInOutQuart', // Tipo de easing
+        });
+    };
+
     return (
         <nav className="w-full">
-            <ul className="flex items-center justify-center">
-                <li onClick={()=>alert("ok")} className="text-[#6A7082] hover:text-[#E2E5F1] text-[15px] border-b-[1px] px-4 py-2 border-[#540FB1]">Home</li>
-                <li className="text-[#6A7082] hover:text-[#E2E5F1] text-[15px] border-b-[1px] px-4 py-2 border-[#540FB1]">Sobre</li>
-                <li className="text-[#6A7082] hover:text-[#E2E5F1] text-[15px] border-b-[1px] px-4 py-2 border-[#540FB1]">Planos</li>
-                <li className="text-[#6A7082] hover:text-[#E2E5F1] text-[15px] border-b-[1px] px-4 py-2 border-[#540FB1]">Dúvidas</li>
+            <ul className="flex items-center justify-center gap-4">
+                <li className="cursor-pointer text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center">
+                    <Link
+                        activeClass="border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        Home
+                    </Link>
+                </li>
+                <li className="cursor-pointer text-[rgb(106,112,130)] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center">
+                    <Link
+                        activeClass="border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center"
+                        to="sobre"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        Sobre
+                    </Link>
+                </li>
+                <li className="cursor-pointer text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center">
+                    <Link
+                        activeClass="border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center"
+                        to="planos"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                    >
+                        Planos
+                    </Link>
+                </li>
+                <li className="cursor-pointer text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center">
+                    <Link
+                        activeClass="border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center"
+                        to="duvidas"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        Dúvidas
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

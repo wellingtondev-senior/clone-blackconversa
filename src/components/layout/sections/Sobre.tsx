@@ -6,7 +6,7 @@ interface SobreProps {
 
 const Sobre = ({id}:SobreProps) => {
     return (
-        <section id={id}>
+        <section id={id} className="w-full h-screen bg-slate-400">
             Enter
         </section>
     );
