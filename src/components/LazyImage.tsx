@@ -8,11 +8,10 @@ interface LazyImageProps {
     className?: string
     children?:ReactNode
     imageSize?:string
-    id?:string
 }
 
 
-const LazyImage: React.FC<LazyImageProps> = ({ src, alt, id, className,imageSize, children }) => {
+const LazyImage: React.FC<LazyImageProps> = ({ src, alt, className,imageSize, children }) => {
     const backgroundRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -39,7 +38,7 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, id, className,imageSize
       return () => observer.disconnect();
     }, [src]);
 
-    return <div id={id} ref={backgroundRef} className={cn(className)} style={{backgroundSize: imageSize}}>
+    return <div  ref={backgroundRef} className={cn(className)} style={{backgroundSize: imageSize}}>
       {children}
     </div>;
 };
