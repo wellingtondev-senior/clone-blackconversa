@@ -2,7 +2,7 @@ import LazyImage from "../../../components/LazyImage";
 import { CONSTANTS } from "../../../config/constants";
 
 const Logo = () => {
-    return <LazyImage src={CONSTANTS.logo} alt={""} className="w-[280px] max-md:h-[40px] h-[30px] bg-cover bg-center bg-no-repeat" />
+    return <LazyImage src={CONSTANTS.logo} alt={""} className="w-[300px] max-md:h-[35px] h-[30px] bg-cover bg-center bg-no-repeat" />
 
 }
 
