@@ -3,19 +3,20 @@ import { useCallback, useEffect, useState } from 'react';
 
 export const EstimaLucro = ({ }) => {
 
-    const [vendasDia, setVendasDia] = useState<number[]>([50])
-    const [media, setMedia] = useState<number[]>([50])
-    const [funcionario, setFuncionario] = useState<number[]>([50])
+    const [vendasDia, setVendasDia] = useState<number[]>([0])
+    const [media, setMedia] = useState<number[]>([0])
+    const [funcionario, setFuncionario] = useState<number[]>([1])
     const [result, setResult] = useState<number>(0)
 
     const calcResult = ()=>{
-        const mediaTotal = vendasDia[0] * media[0];
-        const mediaFunc = funcionario[0] * 1.3;
-        setResult(mediaTotal + mediaFunc) ;
+        const mediaTotal = (vendasDia[0] * media[0]);
+        const mediaFunc = (funcionario[0] * 1300);
+        setResult((mediaTotal + mediaFunc)) ;
     }
        
     
-
+   console.log("media", media[0])
+   console.log("vendas", vendasDia[0])
 
     useEffect(()=>{
         calcResult()
@@ -34,6 +35,7 @@ export const EstimaLucro = ({ }) => {
                         max={1000}
                         step={1}
                         onValueChange={(val)=>{setVendasDia(val); calcResult()}}
+                        value={vendasDia}
                         
                         >
                         <Slider.Track className="bg-gray-700 relative grow rounded-full h-[3px]">
@@ -51,9 +53,10 @@ export const EstimaLucro = ({ }) => {
                     <Slider.Root
                         className="relative flex items-center select-none touch-none w-full h-5 "
                         defaultValue={[media[0]]}
-                        max={100000}
+                        max={5000}
                         step={1}
                         onValueChange={(val)=>{setMedia(val);calcResult()}}
+                        value={media}
                         >
                         <Slider.Track className="bg-gray-700 relative grow rounded-full h-[3px]">
                             <Slider.Range className="absolute bg-[#5E24B7] rounded-full h-full" />
@@ -71,8 +74,10 @@ export const EstimaLucro = ({ }) => {
                         className="relative flex items-center select-none touch-none w-full h-5 "
                         defaultValue={[funcionario[0]]}
                         max={500}
+                        min={1}
                         step={1}
                         onValueChange={(val)=>{setFuncionario(val); calcResult()}}
+                        value={funcionario}
                         >
                         <Slider.Track className="bg-gray-700 relative grow rounded-full h-[3px]">
                             <Slider.Range className="absolute bg-[#5E24B7] rounded-full h-full" />
