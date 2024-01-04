@@ -1,12 +1,25 @@
 import * as Slider from '@radix-ui/react-slider';
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export const EstimaLucro = ({ }) => {
 
     const [vendasDia, setVendasDia] = useState<number[]>([50])
     const [media, setMedia] = useState<number[]>([50])
     const [funcionario, setFuncionario] = useState<number[]>([50])
+    const [result, setResult] = useState<number>(0)
 
+    const calcResult = ()=>{
+        const mediaTotal = vendasDia[0] * media[0];
+        const mediaFunc = funcionario[0] * 1.3;
+        setResult(mediaTotal + mediaFunc) ;
+    }
+       
+    
+
+
+    useEffect(()=>{
+        calcResult()
+    },[])
 
 
     return (
@@ -20,7 +33,7 @@ export const EstimaLucro = ({ }) => {
                         defaultValue={[vendasDia[0]]}
                         max={1000}
                         step={1}
-                        onValueChange={(val)=>setVendasDia(val)}
+                        onValueChange={(val)=>{setVendasDia(val); calcResult()}}
                         
                         >
                         <Slider.Track className="bg-gray-700 relative grow rounded-full h-[3px]">
@@ -34,13 +47,13 @@ export const EstimaLucro = ({ }) => {
                     <p className="text-gray-500 text-center">{vendasDia}</p>
                 </div>
                 <div className="flex flex-col items-center gap-2 mt-10">
-                    <p className="text-gray-500 text-center">Qual o valor médio mensal de venda dos seus produtos?</p>
+                    <p className="text-gray-500 text-center">Qual o valor médio diario de venda dos seus produtos?</p>
                     <Slider.Root
                         className="relative flex items-center select-none touch-none w-full h-5 "
                         defaultValue={[media[0]]}
-                        max={1000000}
+                        max={100000}
                         step={1}
-                        onValueChange={(val)=>setMedia(val)}
+                        onValueChange={(val)=>{setMedia(val);calcResult()}}
                         >
                         <Slider.Track className="bg-gray-700 relative grow rounded-full h-[3px]">
                             <Slider.Range className="absolute bg-[#5E24B7] rounded-full h-full" />
@@ -59,7 +72,7 @@ export const EstimaLucro = ({ }) => {
                         defaultValue={[funcionario[0]]}
                         max={500}
                         step={1}
-                        onValueChange={(val)=>setFuncionario(val)}
+                        onValueChange={(val)=>{setFuncionario(val); calcResult()}}
                         >
                         <Slider.Track className="bg-gray-700 relative grow rounded-full h-[3px]">
                             <Slider.Range className="absolute bg-[#5E24B7] rounded-full h-full" />
@@ -73,7 +86,7 @@ export const EstimaLucro = ({ }) => {
                 </div>
                 <div className='flex flex-col items-center gap-2 mt-10'>
                     <p className="text-gray-500 text-center">Sua empresa deixa de lucrar todos os meses em média:</p>
-                    <div className="w-full rounded-full border border-gray-700 bg-[#5E24B7] text-center py-6 text-white max-md:text-[20px] text-[40px] font-semibold">R$ 11.727,21</div>
+                    <div className="w-full rounded-full border border-gray-700 bg-[#5E24B7] text-center py-6 text-white max-md:text-[20px] text-[40px] font-semibold">R$ {result.toLocaleString()}</div>
                 </div>
                 
             </div>
