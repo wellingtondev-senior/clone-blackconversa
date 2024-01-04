@@ -12,9 +12,7 @@ interface MenuLinkProps extends VariantProps<typeof menuLink>  {
 const menuLink = tv({
     variants:{
         screen:{
-            sm:"border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center text-[#E2E5F1]",
-            md:"border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center text-[#E2E5F1]",
-            lg:"border-b-[1px]  border-[#540FB1] w-[80px] h-[40px] flex items-center justify-center text-[#E2E5F1]"
+            lg:"border-b-[1px] max-md:border-none  border-[#540FB1] w-[80px] max-md:w-full h-[40px] flex items-center justify-center text-[#E2E5F1] max-md:bg-gray-600 max-md:rounded-md"
         }
     },
     defaultVariants:{

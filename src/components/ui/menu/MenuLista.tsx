@@ -11,23 +11,19 @@ interface MenuListaProps extends VariantProps<typeof menuList> {
 }
 
 const menuList = tv({
-    base: "cursor-pointer",
+    base: "cursor-pointer text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center",
     variants: {
-        screen: {
-            lg: "text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center",
-            md: "text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center",
-            sm: "text-[#6A7082] hover:text-[#E2E5F1] text-[15px] w-[80px] h-[40px] border-b-[1px] border-transparent flex items-center justify-center"
-        }
-    
+        open: {
+            true: "cursor-pointer text-[#6A7082] hover:text-[#E2E5F1] text-[15px]  max-md:w-full h-[40px]  flex items-center justify-center",
+            false: "hidden",
+            null:"max-md:hidden"
+        },
     },
-    defaultVariants: {
-        screen: "lg"
-    }
 })
 
-export const MenuLista = ({ className, children, screen}: MenuListaProps) => {
+export const MenuLista = ({ className, children, open}: MenuListaProps) => {
     return (
-        <li className={cn(menuList({ screen }), className)}>
+        <li className={cn(menuList({ open }), className)}>
             {children}
         </li>
     );

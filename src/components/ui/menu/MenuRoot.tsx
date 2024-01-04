@@ -11,8 +11,9 @@ const menu = tv({
     base: "flex  w-full max-md:hidden items-center justify-center",
     variants: {
         open: {
-            true: "left-0",
-            false: "left-[-50px]"
+            true: "absolute justify-end p-4 mt-[40px] max-md:flex left-0 opacity-1 w-full h-[220px] bg-gray-100 flex-col rounded-md transition-1 ease-in-out duration-500",
+            false: "absolute justify-end p-4 mt-[40px] max-md:flex left-0 opacity-0 w-full h-[0px] bg-gray-100 flex-col  rounded-md transition-1 ease-in-out duration-500",
+            null:"max-md:hidden"
         },
     },
     
@@ -20,9 +21,9 @@ const menu = tv({
 });
 
 
-export const MenuRoot = ({ className, children, open=true}:MenuRootProps) => {
+export const MenuRoot = ({ className, children, open}:MenuRootProps) => {
     return (
-        <nav className="w-full max-md:hidden">
+        <nav className="w-full">
             <ul className={cn(menu({open}), className)}>
                {children}
             </ul>
