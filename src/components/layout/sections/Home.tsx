@@ -23,7 +23,7 @@ const Home = ({ id }: HomeProps) => {
             <article className="bg-[#F1F5FF] w-full  h-full pt-[150px] pb-[100px] max-md:pb-10 px-20 max-md:px-6 flex max-md:flex-col items-center justify-between">
                 <div className="flex flex-col items-start justify-center gap-4 w-[50%] max-md:w-full h-full pr-10 max-md:pr-0">
                     <Button className="cursor-default px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >Inovação</Button>
-                    <h2 className="text-[#6326B9] text-[40px]">Inovamos com a técnica de Transformação Boleto Gerado em Pix pago!</h2>
+                    <h2 className="text-[#6326B9] text-[40px] max-md:text-[30px]">Inovamos com a técnica de Transformação Boleto Gerado em Pix pago!</h2>
                     <p className="text-gray-700 text-[15px] leading-loose">
                         Sim, é possível transformar seus boletos gerados em pix pago. Imagine a seguinte situação, o cliente gerou o boleto, e esqueceu de pagar ou desistiu da compra, isso faz com que você perca 7 em 10 vendas.
                         Mas com o BlackConversa a história é outra, seu cliente gerou um boleto e na mesma hora nosso chatbot entra em contato com seu cliente no whatsapp transformando seu boleto NÃO PAGO em PIX PAGO e o melhor de maneira 100% automatizada e humanizada, 7 em cada <strong>10 boletos serão convertidos em Pix pagos.</strong>
