@@ -3,5 +3,6 @@ export const CONSTANTS = {
     background:"./img/back.webp",
     app:"./img/app.webp",
     chat:"./img/chat.webp",
+    group:"./img/group.webp"
 
 }

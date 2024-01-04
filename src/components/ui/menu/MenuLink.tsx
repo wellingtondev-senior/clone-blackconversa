@@ -36,7 +36,7 @@ export const MenuLink = ({ label , className, screen}: MenuLinkProps) => {
             to={removerAcentos(label.toLowerCase())}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={0}
             duration={100}
         >
             {label}
