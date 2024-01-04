@@ -20,7 +20,7 @@ const Home = ({ id }: HomeProps) => {
                 </div>
 
             </LazyImage>
-            <article className="bg-[#F1F5FF] w-full  h-auto pt-[150px] pb-[100px] px-10 flex items-center justify-between">
+            <article className="bg-[#F1F5FF] w-full  h-auto pt-[150px] pb-[100px] px-20 flex items-center justify-between">
                 <div className="flex flex-col items-start justify-center gap-4 w-[50%] h-full pr-10">
                     <Button className="px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >Inovação</Button>
                     <h2 className="text-[#6326B9] text-[40px]">Inovamos com a técnica de Transformação Boleto Gerado em Pix pago!</h2>
@@ -32,6 +32,41 @@ const Home = ({ id }: HomeProps) => {
                 </div>
                 <LazyImage src={CONSTANTS.chat} alt="background" imageSize="100%" className="w-[50%] h-[600px]  bg-cover bg-no-repeat bg-top" />
 
+            </article>
+            <article className="bg-[#DFE4F1] w-full  h-auto pt-[100px] pb-[100px] px-20 grid grid-cols-4 gap-4">
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Tenha atendentes ilimitados em um único número.</h3>
+                    <p className="text-[15px] text-gray-700">Economize tempo e dinheiro com sua equipe em um único número, praticidade e economia</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Construtor de funis</h3>
+                    <p className="text-[15px] text-gray-700">Construa poderosos funis de maneira rápida e prática com o nosso construtor simplificado.
+                        Converter nunca foi tão fácil</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Remarketing</h3>
+                    <p className="text-[15px] text-gray-700">Envie mensagens de remarketing para sua lista de maneira automatizada, porque pagar de novo para vender? os leads são seus, aproveite</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Agende Mensagens</h3>
+                    <p className="text-[15px] text-gray-700">Tem reunião marcada ou precisa avisar seu cliente de uma consulta? Com o nosso agendamento você define a hora e a mensagem que será dispara de forma individual para cada cliente!</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Integração webhook</h3>
+                    <p className="text-[15px] text-gray-700">Recupere pix, boletos e compras canceladas, essa simples função pode colocar 25% amais de dinheiro no seu bolso todos os meses</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Disparo em massa</h3>
+                    <p className="text-[15px] text-gray-700">Dispare mensagens para sua lista de contatos de maneira inteligente, nós te ensinamos a evitar bloqueios desnecessários!</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Chat Interno</h3>
+                    <p className="text-[15px] text-gray-700">Sua equipe pode conversar em tempo real dentro da ferramenta, fazer anotações e avisos, você no controle Total de todas as interações</p>
+                </div>
+                <div className="p-10 flex flex-col items-start justify-center bg-[#D2D6E2] rounded-md gap-2">
+                    <h3 className="text-[#6326B9] text-[20px] font-medium">Atendimento 24 horas por dia.</h3>
+                    <p className="text-[15px] text-gray-700">Com o nosso chatbot sua empresa não para, 24 horas por dia, 7 dias por semana ele vai converter para você, sem reclamar, sem pedir folga ou entregar atestado, a revolução chegou, você fará parte dela?</p>
+                </div>
             </article>
         </section>
 
