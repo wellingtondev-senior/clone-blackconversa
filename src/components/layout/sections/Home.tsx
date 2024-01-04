@@ -20,7 +20,7 @@ const Home = ({ id }: HomeProps) => {
                 </div>
 
             </LazyImage>
-            <article className="bg-[#F1F5FF] w-full  h-auto pt-[150px] pb-[100px] px-20 max-md:px-6 flex max-md:flex-col items-center justify-between">
+            <article className="bg-[#F1F5FF] w-full  h-full pt-[150px] pb-[100px] max-md:pb-10 px-20 max-md:px-6 flex max-md:flex-col items-center justify-between">
                 <div className="flex flex-col items-start justify-center gap-4 w-[50%] max-md:w-full h-full pr-10 max-md:pr-0">
                     <Button className="px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >Inovação</Button>
                     <h2 className="text-[#6326B9] text-[40px]">Inovamos com a técnica de Transformação Boleto Gerado em Pix pago!</h2>
@@ -30,7 +30,7 @@ const Home = ({ id }: HomeProps) => {
                         Mas com o BlackConversa a história é outra, seu cliente gerou um boleto e na mesma hora nosso chatbot entra em contato com seu cliente no whatsapp transformando seu boleto NÃO PAGO em PIX PAGO e o melhor de maneira 100% automatizada e humanizada, 7 em cada <strong>10 boletos serão convertidos em Pix pagos.</strong>
                     </p>
                 </div>
-                <LazyImage src={CONSTANTS.chat} alt="background" imageSize="100%" className="w-[50%] max-md:w-full max-md:mt-10 h-[600px]  bg-cover bg-no-repeat bg-top" />
+                <LazyImage src={CONSTANTS.chat} alt="background" imageSize="100%" className="w-[50%] max-md:w-[370px] max-md:mt-10 max-md:h-[400px] h-[600px] px-6 bg-cover bg-no-repeat bg-top" />
 
             </article>
             <article className="bg-[#DFE4F1] w-full  h-auto pt-[100px] pb-[100px] px-20 max-md:px-6 grid grid-cols-4 max-[1000px]:grid-cols-1 gap-4">
