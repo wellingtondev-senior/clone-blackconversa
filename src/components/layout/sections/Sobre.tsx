@@ -52,9 +52,22 @@ const Sobre = ({ id }: SobreProps) => {
             </article>
             <article className="w-full h-auto bg-[#F1F5FF] flex flex-col items-center justify-start max-md:px-6 pb-[100px]">
                 <div className="h-auto">
-                     <YouTubeVideo videoId="xWT3Rbr2dns" /> 
-                    
+                    <YouTubeVideo videoId="xWT3Rbr2dns" />
+
                 </div>
+            </article>
+            <article className="w-full h-auto bg-[#DFE4F1] flex flex-col items-center justify-start gap-6 px-[150px] max-md:px-6 pt-[100px] pb-[100px]">
+                <Button className="cursor-default px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >
+                    Como nossa plataforma funciona
+                </Button>
+
+                <h2 className="text-[#6326B9] text-[40px] max-md:text-[30px] text-center">Tenho que configurar tudo sozinho? NÃO! Nós te ajudaremos​</h2>
+                <p className="text-gray-700 text-[15px] leading-loose text-center ">Temos robôs prontos para você utilizar com um click. Além disso nosso time de especialistas em construção de fluxos está disponível para te ajudar por 1 hora inteira, isso daria para construir 10 robôs.
+                </p>
+                <h3 className="text-[#6326B9] text-[50px] max-md:text-[30px] text-center">Assista uma demostração:
+                </h3>
+                <YouTubeVideo videoId="ehjlCsprtVM" />
+
             </article>
         </section>
     );
