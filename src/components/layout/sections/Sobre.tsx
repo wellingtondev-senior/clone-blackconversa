@@ -5,7 +5,7 @@ import Moldura from "../../../components/moldura";
 import { EstimaLucro } from "../../../components/EstimaLucro";
 import LoadableYouTube from "../../../components/YouTubeLoader";
 import YouTubeVideo from "../../../components/YoutubeVideo";
-import SlideBanner from "../../../components/SlideBanner";
+import CaroucelComponent from "../../../components/carousel";
 
 
 interface SobreProps {
@@ -70,12 +70,14 @@ const Sobre = ({ id }: SobreProps) => {
                 <YouTubeVideo videoId="ehjlCsprtVM" />
 
             </article>
-            <article className="w-full h-auto bg-[#DFE4F1] flex flex-col items-center justify-start gap-6 px-[150px] max-md:px-6 pt-[100px] pb-[100px]">
+            <article className="w-full h-auto bg-[#DFE4F1] flex flex-col items-center justify-start gap-6 px-[150px] max-md:px-6 pt-[100px] ">
                 <Button className="cursor-default px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >
                     Integrações
                 </Button>
                 <h2 className="text-[#6326B9] text-[40px] max-md:text-[30px] text-center">Integre com as principais plataformas.​</h2>
-                <SlideBanner />
+            </article>
+            <article className="w-full h-auto bg-[#DFE4F1]">
+                <CaroucelComponent />
             </article>
         </section>
     );

@@ -6,11 +6,47 @@ export const CONSTANTS = {
     group:"./img/group.webp",
     mobile:"./img/mobile.gif",
     banner:[
-        "./img/logos/01.webp",
-        "./img/logos/02.webp",
-        "./img/logos/03.webp",
-        "./img/logos/04.webp",
-        "./img/logos/05.webp",
-    ]
+        {
+            id:1,
+            image:"./img/logos/01.webp"
+        },
+        {
+            id:2,
+            image:"./img/logos/02.webp"
+        },
+        {
+            id:3,
+            image:"./img/logos/03.webp"
+        },
+        {
+            id:4,
+            image:"./img/logos/04.webp"
+        },
+        {
+            id:5,
+            image:"./img/logos/05.webp"
+        },
+        {
+            id:6,
+            image:"./img/logos/01.webp"
+        },
+        {
+            id:7,
+            image:"./img/logos/02.webp"
+        },
+        {
+            id:8,
+            image:"./img/logos/03.webp"
+        },
+        {
+            id:9,
+            image:"./img/logos/04.webp"
+        },
+        {
+            id:10,
+            image:"./img/logos/05.webp"
+        },
+        
 
+    ]
 }
