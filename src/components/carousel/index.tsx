@@ -59,7 +59,7 @@ export default function CarouselComponent() {
       sliderClass=""
       slidesToSlide={1}
       swipeable
-      transitionDuration={1000}
+      transitionDuration={7000}
     >
       {CONSTANTS.banner.map((image) => (
         <LazyImage
