@@ -3,6 +3,8 @@ import LazyImage from "../../../components/LazyImage";
 import { Button } from "../../../components/ui/button";
 import Moldura from "../../../components/moldura";
 import { EstimaLucro } from "../../../components/EstimaLucro";
+import LoadableYouTube from "../../../components/YouTubeLoader";
+import YouTubeVideo from "../../../components/YoutubeVideo";
 
 
 interface SobreProps {
@@ -28,12 +30,31 @@ const Sobre = ({ id }: SobreProps) => {
                 <p className="text-white text-[45px] max-md:text-[30px] w-full text-center">Veja funcionando:</p>
                 <Moldura />
             </article>
-            <article className="w-full h-auto bg-[#0F0019] flex flex-col items-center justify-start gap-6">
+            <article className="w-full h-auto bg-[#0F0019] flex flex-col items-center justify-start gap-6 pb-20">
                 <Button className="cursor-default px-8 py-[20px] border border-[#3f2958] [background-image:radial-gradient(60%_50%_at_50%_50%,_#10011A_0%,_#17022D_100%)]" >
                     Estimativa de lucro
                 </Button>
                 <p className="text-white text-[45px] text-center w-[50%] max-md:w-[95%] max-md:text-[30px]">Confira abaixo uma estimativa de lucro com a nossa ferramenta</p>
-                <EstimaLucro/>
+                <EstimaLucro />
+            </article>
+            <article className="w-full h-auto bg-[#F1F5FF] flex flex-col items-center justify-start gap-6 px-[180px] max-md:px-6 pt-[100px] pb-[100px]">
+                <Button className="cursor-default px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >
+                    Sobre o robô
+                </Button>
+
+                <h2 className="text-[#6326B9] text-[40px] max-md:text-[30px] text-center">Crie um robozinho de atendimento humanizado em menos de 3 minutos​</h2>
+                <p className="text-gray-700 text-[15px] leading-loose text-center ">
+                    Nossa plataforma de conversa é um construtor de robôs fácil click a click que mesmo uma criança consegue configurar<br />
+                    Sim, a nossa plataforma foi construída pensando em facilidade e praticidade para <strong>você mesmo não sendo um programador consiga construir conversas inteligentes e automáticas que farão sua empresa crescer no automático</strong>
+                </p>
+
+
+            </article>
+            <article className="w-full h-auto bg-[#F1F5FF] flex flex-col items-center justify-start max-md:px-6 pb-[100px]">
+                <div className="h-auto">
+                     <YouTubeVideo videoId="xWT3Rbr2dns" /> 
+                    
+                </div>
             </article>
         </section>
     );
