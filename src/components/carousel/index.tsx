@@ -9,11 +9,11 @@ export default function CarouselComponent() {
       additionalTransfrom={0}
       arrows={false}
       autoPlay
-      autoPlaySpeed={1000}
+      autoPlaySpeed={0}
       centerMode={false}
       className="w-full h-[150px]"
       containerClass="container-with-dots"
-      customTransition="transform 13s ease-in-out"
+      customTransition="transform 7s ease-in-out"
       dotListClass=""
       draggable
       focusOnSelect={false}
@@ -59,7 +59,7 @@ export default function CarouselComponent() {
       sliderClass=""
       slidesToSlide={1}
       swipeable
-      transitionDuration={15000}
+      transitionDuration={1000}
     >
       {CONSTANTS.banner.map((image) => (
         <LazyImage
