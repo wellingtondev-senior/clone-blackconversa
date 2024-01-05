@@ -14,7 +14,7 @@ interface SobreProps {
 
 const Sobre = ({ id }: SobreProps) => {
     return (
-        <section id={id} className="w-full  bg-[#0F0019]  pt-[100px] pb-[100px]">
+        <section id={id} className="w-full h-auto bg-[#0F0019]">
             <article className="flex items-center justify-between max-md:flex-col">
                 <LazyImage src={CONSTANTS.group} alt="background" imageSize="100%" className="w-[50%] max-md:w-[370px] max-md:mt-10 max-md:h-[400px] h-[600px] px-6 bg-cover bg-no-repeat bg-top" />
                 <div className="flex flex-col items-start justify-start w-[55%] max-md:w-[80%] gap-4">
