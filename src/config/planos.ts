@@ -1,4 +1,4 @@
-const PLANOS = [
+export const PLANOS = [
     {
         id:1,
         titulo:"STARTER",
