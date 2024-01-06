@@ -19,6 +19,7 @@ const Planos = ({ id }: PlanosProps) => {
                     Quantos números de Whatsapp você precisa conectar?
                 </p>
                <PlanosComponent/>
+               
             </article>
 
         </section>
