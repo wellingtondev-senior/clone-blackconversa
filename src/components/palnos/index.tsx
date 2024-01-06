@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
 import LazyImage from "../../components/LazyImage";
 import { PLANOS } from "../../config/planos";
 
 const PlanosComponent = () => {
     const [qtd, setQtd] = useState<number>(1);
+    const [starter, setStarter ] = useState<number>(1);
+
+  const setValorStart = (valor:number)=>{
+     return valor*qtd
+  }
+
+    useEffect(()=>{
+
+    },[])
 
     return (
         <article className="flex flex-col items-center justify-start">
@@ -31,8 +40,8 @@ const PlanosComponent = () => {
                         </div>
                         <div className="flex items-end justify-start gap-4">
                             <span className="text-[30px] text-gray-50">R$
-                                <span className="text-[50px] text-gray-50 font-semibold p-0 mx-2">97,00</span>
-                                <span className=" text-[18px] text-gray-500"> /Primeiro Mês</span>
+                                <span className="text-[60px] text-gray-50 font-bold p-0 mx-2">{setValorStart(97.00)}</span>
+                                <span className=" text-[16px] text-gray-500"> /Primeiro Mês</span>
                             </span>
                         </div>
                     </div>
