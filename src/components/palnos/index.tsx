@@ -37,7 +37,7 @@ const PlanosComponent = () => {
                         if (index % 2 == 0) {
                             return (<div key={plano.id} className="w-[380px] p-8 bg-[#1B1026] rounded-lg border border-[#21132E]">
                                 <div className="flex items-center justify-start gap-4">
-                                    <LazyImage src={PLANOS[0].icon} alt="background" imageSize="100%" className=" w-[40px] h-[40px]  bg-contain bg-no-repeat bg-left" />
+                                    <LazyImage src={plano.icon} alt="background" imageSize="100%" className=" w-[40px] h-[40px]  bg-contain bg-no-repeat bg-left" />
                                     <span className="text-[40px] font-semibold text-gray-50">{plano.titulo}</span>
                                 </div>
                                 <p className="text-left text-[14px] text-gray-600">{plano.subTitle}</p>
@@ -73,7 +73,7 @@ const PlanosComponent = () => {
                         }else{
                             return (<div key={plano.id} className="w-[380px] p-8 bg-[#1B1026] rounded-lg border border-[#21132E]">
                                 <div className="flex items-center justify-start gap-4">
-                                    <LazyImage src={PLANOS[0].icon} alt="background" imageSize="100%" className=" w-[40px] h-[40px]  bg-contain bg-no-repeat bg-left" />
+                                    <LazyImage src={plano.icon} alt="background" imageSize="100%" className=" w-[40px] h-[40px]  bg-contain bg-no-repeat bg-left" />
                                     <span className="text-[40px] font-semibold text-gray-50">{plano.titulo}</span>
                                 </div>
                                 <p className="text-left text-[14px] text-gray-600">{plano.subTitle}</p>

@@ -29,7 +29,7 @@ export const PLANOS = [
         valorMesSemDesconto:197.00,
         valorAno:1194.00,
         valorMesComDesconto:0,
-        icon:"./img/icon/01.webp",
+        icon:"./img/icon/02.webp",
         include:[
             "1 Número de whatsapp conectado",
             "Acesso ao painel de controle",
