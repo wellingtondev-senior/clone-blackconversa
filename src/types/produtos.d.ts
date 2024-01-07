@@ -2,9 +2,9 @@ export interface Plano {
     id: number;
     titulo: string;
     subTitle: string;
-    valorMes: number;
+    valorMesSemDesconto: number;
     valorAno: number;
-    primeiroMes: number;
+    valorMesComDesconto: number;
     icon: string;
     include: string[];
   }

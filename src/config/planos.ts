@@ -3,9 +3,9 @@ export const PLANOS = [
         id:1,
         titulo:"STARTER",
         subTitle:"Perfeito para quem esta iniciando",
-        valorMes:147.00,
+        valorMesSemDesconto:147.00,
         valorAno:1194.00,
-        primeiroMes:97.00,
+        valorMesComDesconto:97.00,
         icon:"./img/icon/01.webp",
         include:[
             "1 Número de whatsapp conectado",
@@ -26,9 +26,9 @@ export const PLANOS = [
         id:1,
         titulo:"PRÓ",
         subTitle:"Perfeito para quem esta iniciando",
-        valorMes:147.00,
+        valorMesSemDesconto:197.00,
         valorAno:1194.00,
-        primeiroMes:97.00,
+        valorMesComDesconto:0,
         icon:"./img/icon/01.webp",
         include:[
             "1 Número de whatsapp conectado",
