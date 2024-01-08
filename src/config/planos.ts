@@ -31,22 +31,19 @@ export const PLANOS = [
         valorMesComDesconto:0,
         icon:"./img/icon/02.webp",
         include:[
-            "1 Número de whatsapp conectado",
-            "Acesso ao painel de controle",
-            "Acesso ao bate papo (5 atendentes inclusos)",
-            "Campanhas ilimitadas",
-            "Disparos ilimitados",
-            "Acesso ao criador de etiquetas",
-            "Fluxos de Conversa ilimitados (Robozinho trabalhando 24 horas por dia)",
-            "Online 24 horas por dia",
+            "Todo conteúdo dos planos anteriores",
+            "Atendentes ilimitados",
+            "Acesso ao fórum Blackzera",
+            "Calls Semanais para Tirar Dúvidas",
+            "2 horas de call individual com o suporte para configurações e dúvidas",
             "Integrações Webhooks",
-            "80% de comissão em 1 produto",
+            "Acesso ao Gerente de grupos (Em breve)",
+            "Acesso ao robô de assinaturas do whatsapp (Em breve)",
+            "Acesso ao Preenchedor de grupos para lançamento (Em breve)",
+            "Acesso ao aquecedor de números 100% automatizado (Em breve)",
+            "Afiliação do BlackConversa",
             "Te ensinamos a vender",
-            "+ FUNIS ILIMITADOS",
-            "+ Responda clientes 24/7",
-            "+ Gatilhos de integrações",
-            "+ Gatilho de palavras-chave",
-            "+ Plugue diferentes funis",
+           
         ]
 
     }
