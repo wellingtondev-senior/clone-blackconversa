@@ -41,7 +41,12 @@ export const PLANOS = [
             "Online 24 horas por dia",
             "Integrações Webhooks",
             "80% de comissão em 1 produto",
-            "Te ensinamos a vender"
+            "Te ensinamos a vender",
+            "+ FUNIS ILIMITADOS",
+            "+ Responda clientes 24/7",
+            "+ Gatilhos de integrações",
+            "+ Gatilho de palavras-chave",
+            "+ Plugue diferentes funis",
         ]
 
     }

@@ -61,7 +61,7 @@ const PlanosComponent = () => {
 
             </div>
             <p className="text-gray-600 text-[14px] text-center">Número adicional: R$ 97,00</p>
-            <div className="pt-10 flex items-center justify-center gap-20">
+            <div className="pt-10 grid grid-cols-2 gap-20">
                 {
                     PLANOS.map((plano: Plano, index: number) => {
                         if (index % 2 == 0) {
