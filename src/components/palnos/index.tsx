@@ -146,8 +146,9 @@ const PlanosComponent = () => {
             <div className="flex items-center justify-between w-[200px] h-[50px] p-[5px] rounded-full  bg-gradient-to-t from-[#180A1F] via-[#10011A] to-[#180A1F] mt-[80px]">
                 <span className="bg-[#510FAA] text-gray-50 rounded-full flex items-center justify-center text-[11px] font-bold absolute h-[25px] w-[100px] mt-[-50px] ml-[100px]">2 Meses Grátis</span>
                 <Button onClick={setValorMensal} className={mensal ? swift.mensal.active : swift.mensal.noactive}>Mensal</Button>
-                <Button onClick={() => setMensal(!mensal)} className={mensal ? swift.anual.noactive : swift.anual.active}>Anual</Button>
+                <Button onClick={setValorMensal} className={mensal ? swift.anual.noactive : swift.anual.active}>Anual</Button>
             </div>
+            <span className="text-gray-600 text-[20px] text-center mt-10 ">Você economiza R$596 no Plano Anual.</span>
 
         </article>
     );
