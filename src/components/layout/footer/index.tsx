@@ -9,12 +9,12 @@ const Footer = () => {
         <section className="w-full h-auto bg-[#0E0016] pt-[100px] px-20 max-md:px-6 flex flex-col justify-between">
             <article className="border-t border-gray-700 w-full pb-10">
                 <LazyImage src={CONSTANTS.logo} alt="background" className="absolute max-md:mt-[-25px] mt-[-35px] bg-[#0E0016] w-[350px] max-md:w-[200px] h-[80px]  bg-contain bg-no-repeat bg-top" />
-                <div className="flex justify-between w-full h-full ">
-                    <div className="w-[30%] h-200px pt-20">
+                <div className="flex justify-between w-full h-full max-md:flex-col">
+                    <div className="w-[30%] max-md:w-full h-200px pt-20">
                         <span className="text-[15px] text-gray-50">BlackConversa é o seu construtor de fluxos, criado para você e por você</span>
                     </div>
                     <div className="w-full flex flex-col">
-                        <ul className="flex items-start justify-end pt-6 gap-6">
+                        <ul className="flex items-start justify-end pt-6 gap-6 max-md:grid max-md:grid-cols-2">
                             <li>
                                 <a href="https://www.facebook.com/profile.php?id=100092253600432" className="flex gap-2 items-center cursor-pointer">
                                     <FaFacebookSquare className="fill-[#6326B9]" />
@@ -46,7 +46,7 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
-                        <div className="text-gray-50 flex flex-col items-end mt-10">
+                        <div className="text-gray-50 flex flex-col items-end mt-10 max-md:items-center">
                             <span>Blackzera © 2023 - Todos os direitos reservados</span>
                             <p>Desenvolvido por <span className="text-[11px] text-[#6326B9]">GOAT Studio Design</span></p>
                         </div>
