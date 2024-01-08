@@ -4,6 +4,7 @@ import React from 'react'
 import Sobre from "../components/layout/sections/Sobre"
 import Planos from "../components/layout/sections/Planos"
 import Duvidas from "../components/layout/sections/Duvidas"
+import Footer from "../components/layout/footer"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Sobre id="sobre" />
       <Planos id="planos" />
       <Duvidas id="duvidas" />
+      <Footer/>
     </main>
   )
 }
