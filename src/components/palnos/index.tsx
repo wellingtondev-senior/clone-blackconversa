@@ -24,13 +24,28 @@ const PlanosComponent = () => {
     const [qtd, setQtd] = useState<number>(1);
     const [starter, setStarter] = useState<number>(1);
     const [mensal, setMensal] = useState<boolean>(true);
+    const [valorMensalStater, setValorMensalStarter] = useState<number>();
 
-    const setValorStart = (valorDeconto: number, valorSemDesconto: number, valorAno: number) => {
+    const setValorPlano = (valor:number)=>{
+        if(mensal){
+            return valor
+        }else{
+           return valor * 10 
+        }
+
+    }
+
+    const setValorQTD = (valorDeconto: number, valorSemDesconto: number, valorAno: number) => {
         if (valorDeconto == 0) {
             return valorSemDesconto * qtd
         } else {
             return valorDeconto * qtd
         }
+    }
+
+    const setValorMensal = ()=>{
+        setMensal(!mensal)
+
     }
 
     useEffect(() => {
@@ -61,14 +76,14 @@ const PlanosComponent = () => {
                                         <div className="h-[100px]"></div> :
                                         <div className="flex items-center justify-start gap-4 h-[100px] pb-2">
                                             <p className="text-[18px] text-gray-50">De</p>
-                                            <p className="line-through text-[18px] text-red-700 font-semibold">R$ 147,00</p>
+                                            <p className="line-through text-[18px] text-red-700 font-semibold">R$ {setValorPlano(setValorQTD(0, plano.valorMesSemDesconto, plano.valorAno)).toLocaleString()}</p>
                                             <p className="text-[18px] text-gray-50"> por:</p>
                                         </div>
 
                                 }
                                 <div className="flex items-end justify-start gap-4">
                                     <span className="text-[30px] text-gray-50">R$
-                                        <span className="text-[60px] text-gray-50 font-bold p-0 mx-2">{setValorStart(plano.valorMesComDesconto, plano.valorMesSemDesconto, plano.valorAno)}</span>
+                                        <span className="text-[60px] text-gray-50 font-bold p-0 mx-2">{setValorPlano(setValorQTD(plano.valorMesComDesconto, plano.valorMesSemDesconto, plano.valorAno)).toLocaleString()}</span>
                                         <span className=" text-[16px] text-gray-500"> /Primeiro Mês</span>
                                     </span>
                                 </div>
@@ -97,14 +112,14 @@ const PlanosComponent = () => {
                                         <div className="h-[100px]"></div> :
                                         <div className="flex items-center justify-start gap-4 h-[100px] pb-2">
                                             <p className="text-[18px] text-gray-50">De</p>
-                                            <p className="line-through text-[18px] text-red-700 font-semibold">R$ 147,00</p>
+                                            <p className="line-through text-[18px] text-red-700 font-semibold">R$ {setValorPlano(setValorQTD(0, plano.valorMesSemDesconto, plano.valorAno)).toLocaleString()}</p>
                                             <p className="text-[18px] text-gray-50"> por:</p>
                                         </div>
 
                                 }
                                 <div className="flex items-end justify-start gap-4">
                                     <span className="text-[30px] text-gray-50">R$
-                                        <span className="text-[60px] text-gray-50 font-bold p-0 mx-2">{setValorStart(plano.valorMesComDesconto, plano.valorMesSemDesconto, plano.valorAno)}</span>
+                                        <span className="text-[60px] text-gray-50 font-bold p-0 mx-2">{setValorPlano(setValorQTD(plano.valorMesComDesconto, plano.valorMesSemDesconto, plano.valorAno)).toLocaleString()}</span>
                                         <span className=" text-[16px] text-gray-500"> /Primeiro Mês</span>
                                     </span>
                                 </div>
@@ -130,7 +145,7 @@ const PlanosComponent = () => {
             </div>
             <div className="flex items-center justify-between w-[200px] h-[50px] p-[5px] rounded-full  bg-gradient-to-t from-[#180A1F] via-[#10011A] to-[#180A1F] mt-[80px]">
                 <span className="bg-[#510FAA] text-gray-50 rounded-full flex items-center justify-center text-[11px] font-bold absolute h-[25px] w-[100px] mt-[-50px] ml-[100px]">2 Meses Grátis</span>
-                <Button onClick={() => setMensal(!mensal)} className={mensal ? swift.mensal.active : swift.mensal.noactive}>Mensal</Button>
+                <Button onClick={setValorMensal} className={mensal ? swift.mensal.active : swift.mensal.noactive}>Mensal</Button>
                 <Button onClick={() => setMensal(!mensal)} className={mensal ? swift.anual.noactive : swift.anual.active}>Anual</Button>
             </div>
 
