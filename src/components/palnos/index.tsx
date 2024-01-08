@@ -9,13 +9,13 @@ import { Plano } from "../../types/produtos";
 
 
 const swift = {
-    mensal:{
-        active:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
-        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-50 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0",
+    mensal: {
+        active: "rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
+        noactive: "rounded-full w-[50%] h-[40px] text-[16px] text-gray-50 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0",
     },
-    anual:{
-        active:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
-        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-50 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0"
+    anual: {
+        active: "rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
+        noactive: "rounded-full w-[50%] h-[40px] text-[16px] text-gray-50 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0"
     }
 }
 
@@ -26,11 +26,11 @@ const PlanosComponent = () => {
     const [mensal, setMensal] = useState<boolean>(true);
     const [valorMensalStater, setValorMensalStarter] = useState<number>();
 
-    const setValorPlano = (valor:number)=>{
-        if(mensal){
+    const setValorPlano = (valor: number) => {
+        if (mensal) {
             return valor
-        }else{
-           return valor * 10 
+        } else {
+            return valor * 10
         }
 
     }
@@ -43,7 +43,7 @@ const PlanosComponent = () => {
         }
     }
 
-    const setValorMensal = ()=>{
+    const setValorMensal = () => {
         setMensal(!mensal)
 
     }
@@ -143,6 +143,8 @@ const PlanosComponent = () => {
                 }
 
             </div>
+            <span className="text-gray-600 text-[20px] text-center mb-10 mt-10">            Todos os planos possuem garantia de 7 dias e são reembolsados ​​se cancelados após esse período.
+            </span>
             <div className="flex items-center justify-between w-[200px] h-[50px] p-[5px] rounded-full  bg-gradient-to-t from-[#180A1F] via-[#10011A] to-[#180A1F] mt-[80px]">
                 <span className="bg-[#510FAA] text-gray-50 rounded-full flex items-center justify-center text-[11px] font-bold absolute h-[25px] w-[100px] mt-[-50px] ml-[100px]">2 Meses Grátis</span>
                 <Button onClick={setValorMensal} className={mensal ? swift.mensal.active : swift.mensal.noactive}>Mensal</Button>
