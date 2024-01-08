@@ -6,9 +6,24 @@ import { SiVerizon } from "react-icons/si";
 import { Plano } from "../../types/produtos";
 
 
+
+
+const swift = {
+    mensal:{
+        active:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
+        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0",
+    },
+    anual:{
+        active:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
+        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0"
+    }
+}
+
+
 const PlanosComponent = () => {
     const [qtd, setQtd] = useState<number>(1);
     const [starter, setStarter] = useState<number>(1);
+    const [mensal, setMensal] = useState<boolean>(true);
 
     const setValorStart = (valorDeconto: number, valorSemDesconto: number, valorAno: number) => {
         if (valorDeconto == 0) {
@@ -70,7 +85,7 @@ const PlanosComponent = () => {
                                     ))
                                 }
                             </div>);
-                        }else{
+                        } else {
                             return (<div key={plano.id} className="w-[380px] p-8  bg-gradient-to-t from-[#2f124d] via-[#180A1F] to-[#180A1F] rounded-lg border-2 border-[#5f2f8d] shadow-[#2f124d] shadow-lg">
                                 <div className="flex items-center justify-start gap-4">
                                     <LazyImage src={plano.icon} alt="background" imageSize="100%" className=" w-[40px] h-[40px]  bg-contain bg-no-repeat bg-left" />
@@ -112,6 +127,11 @@ const PlanosComponent = () => {
                     )
                 }
 
+            </div>
+            <div className="flex items-center justify-between w-[200px] h-[50px] p-[5px] rounded-full  bg-gradient-to-t from-[#180A1F] via-[#10011A] to-[#180A1F] mt-[80px]">
+                <span className="bg-[#510FAA] text-gray-50 rounded-full flex items-center justify-center text-[11px] font-bold absolute h-[25px] w-[100px] mt-[-50px] ml-[100px]">2 Meses Grátis</span>
+                <Button onClick={() => setMensal(!mensal)} className={mensal ? swift.mensal.active : swift.mensal.noactive}>Mensal</Button>
+                <Button onClick={() => setMensal(!mensal)} className={mensal ? swift.anual.noactive : swift.anual.active}>Anual</Button>
             </div>
 
         </article>
