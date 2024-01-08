@@ -27,7 +27,7 @@ const Planos = ({ id }: PlanosProps) => {
                 <Button className="cursor-default px-8 py-[20px] text-[#6326B9] [background-image:radial-gradient(50%_50%_at_50%_50%,_#ffffff_0%,_#D9D2F3_100%)]" >
                     Garantia
                 </Button>
-                <h2 className="text-[#6326B9] text-[40px] max-md:text-[30px]">Satisfação garantia e risco zero!</h2>
+                <h2 className="text-[#6326B9] text-[40px] max-md:text-[30px] text-center">Satisfação garantia e risco zero!</h2>
                 <p className="text-gray-700 text-[15px] leading-loose">
                     Se você adquirir qualquer plano e em até 7 dias e por algum motivo não se sentir satisfeito, devolvemos o seu dinheiro!
                 </p>
