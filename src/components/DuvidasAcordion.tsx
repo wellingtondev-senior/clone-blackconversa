@@ -13,7 +13,7 @@ const DuvidasAcordion = () => {
         <Accordion type="single" collapsible className="w-full space-y-4">
            {
             DUVIDAS.map((duvida)=>(
-                <AccordionItem key={duvida.id} value={`item-${duvida.id}`} className="bg-[#1B1026] px-10 rounded-lg">
+                <AccordionItem key={duvida.id} value={`item-${duvida.id}`} className="bg-[#1B1026] px-10 rounded-lg border-b-[#6326B9]">
                 <AccordionTrigger className="text-gray-50 font-semibold text-[15px]">{duvida.titulo}</AccordionTrigger>
                 <AccordionContent className="text-gray-300 text-[15px]">
                     {duvida.content}
