@@ -11,11 +11,11 @@ import { Plano } from "../../types/produtos";
 const swift = {
     mensal:{
         active:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
-        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0",
+        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-50 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0",
     },
     anual:{
         active:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-gradient-to-r from-gray-50 to-[#A46FF3] flex items-center justify-center p-0",
-        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-800 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0"
+        noactive:"rounded-full w-[50%] h-[40px] text-[16px] text-gray-50 font-bold bg-transparent hover:bg-gray-500 flex items-center justify-center p-0"
     }
 }
 
