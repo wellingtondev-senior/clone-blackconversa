@@ -87,6 +87,7 @@ const PlanosComponent = () => {
                                         <span className=" text-[16px] text-gray-500"> /Primeiro Mês</span>
                                     </span>
                                 </div>
+                                <Button className="w-full bg-gradient-to-t from-[#5f2f8d] via-[#5f2f8d] to-[#180A1F] border-2 border-[#5f2f8d] shadow-[#2f124d] shadow-lg py-8 text-[18px] rounded-full">QUERO O PLANO {plano.titulo}</Button>
                                 <div className="py-6">
                                     <span className="text-[14px] font-semibold text-gray-50">Incluido no plano {plano.titulo}:</span>
                                 </div>
@@ -123,6 +124,8 @@ const PlanosComponent = () => {
                                         <span className=" text-[16px] text-gray-500"> /Primeiro Mês</span>
                                     </span>
                                 </div>
+                                <Button className="w-full bg-gradient-to-t from-[#5f2f8d] via-[#5f2f8d] to-[#180A1F] border-2 border-[#5f2f8d] shadow-[#2f124d] shadow-lg py-8 text-[18px] rounded-full">QUERO O PLANO {plano.titulo}</Button>
+
                                 <div className="py-6">
                                     <span className="text-[14px] font-semibold text-gray-50">Incluido no plano {plano.titulo}:</span>
                                 </div>
