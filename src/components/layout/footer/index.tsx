@@ -46,8 +46,9 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
-                        <div>
-
+                        <div className="text-gray-50 flex flex-col items-end mt-10">
+                            <span>Blackzera © 2023 - Todos os direitos reservados</span>
+                            <p>Desenvolvido por GOAT Studio Design</p>
                         </div>
                     </div>
                 </div>
@@ -58,7 +59,7 @@ const Footer = () => {
                 </p>
             </article>
 
-        </section>
+        </section >
     );
 }
 
