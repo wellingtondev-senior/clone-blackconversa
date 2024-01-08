@@ -3,9 +3,9 @@ import { CONSTANTS } from "../../../config/constants";
 
 const Footer = () => {
     return (
-        <section className="w-full bg-[#0E0016] h-auto py-[100px] px-20">
+        <section className="w-full bg-[#0E0016] h-auto py-[100px] px-20 max-md:px-6">
             <article className="border-t border-gray-700 w-full ">
-                <LazyImage src={CONSTANTS.logo} alt="background" className="absolute mt-[-35px] bg-[#0E0016] w-[350px] h-[80px]  bg-contain bg-no-repeat bg-top" />
+                <LazyImage src={CONSTANTS.logo} alt="background" className="absolute max-md:mt-[-25px] mt-[-35px] bg-[#0E0016] w-[350px] max-md:w-[200px] h-[80px]  bg-contain bg-no-repeat bg-top" />
 
             </article>
 
