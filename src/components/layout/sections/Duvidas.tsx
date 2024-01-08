@@ -4,7 +4,7 @@ interface DuvidasProps {
 
 const Duvidas = ({id}:DuvidasProps) => {
     return (
-        <section id={id} className="w-full h-screen bg-orange-400">
+        <section id={id} className="w-full h-screen bg-[#0E0016]">
             Enter
         </section>
     );
