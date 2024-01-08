@@ -5,6 +5,7 @@ export const CONSTANTS = {
     chat:"./img/chat.webp",
     group:"./img/group.webp",
     mobile:"./img/mobile.gif",
+
     banner:[
         {
             id:1,
@@ -46,7 +47,29 @@ export const CONSTANTS = {
             id:10,
             image:"./img/logos/05.webp"
         },
+    ],
+    garantia:[
         
-
+            {
+                id:1,
+                image:"./img/icon/01.svg",
+                text:"Compra 100% segura"
+            }, 
+            
+            {
+                id:2,
+                image:"./img/icon/02.svg",
+                text:"7 dias de garantia"
+            }, 
+            {
+                id:3,
+                image:"./img/icon/03.svg",
+                text:"Reembolso garantido"
+            }, 
+            {
+                id:4,
+                image:"./img/icon/04.svg",
+                text:"Qualidade garantida"
+            }, 
     ]
 }
