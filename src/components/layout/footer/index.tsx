@@ -16,31 +16,31 @@ const Footer = () => {
                     <div className="w-full flex flex-col">
                         <ul className="flex items-start justify-end pt-6 gap-6">
                             <li>
-                                <a className="flex gap-2 items-center cursor-pointer">
+                                <a href="https://www.facebook.com/profile.php?id=100092253600432" className="flex gap-2 items-center cursor-pointer">
                                     <FaFacebookSquare className="fill-[#6326B9]" />
                                     <span className="text-[13px] text-gray-50">Facebook</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="flex gap-2 items-center cursor-pointer">
+                                <a href="https://www.instagram.com/hendrick.bc/" className="flex gap-2 items-center cursor-pointer">
                                     <FaInstagram className="fill-[#6326B9]" />
                                     <span className="text-[13px] text-gray-50">Instagram</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="flex gap-2 items-center cursor-pointer">
+                                <a href="https://api.whatsapp.com/send?phone=5511912273176&text=Vim%20da%20p%C3%A1gina%20do%20BlackConversa" className="flex gap-2 items-center cursor-pointer">
                                     <FaWhatsapp className="fill-[#6326B9]" />
                                     <span className="text-[13px] text-gray-50">Whatsapp</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="flex gap-2 items-center cursor-pointer">
+                                <a href="https://t.me/forum_blackzera" className="flex gap-2 items-center cursor-pointer">
                                     <FaTelegram className="fill-[#6326B9]" />
                                     <span className="text-[13px] text-gray-50">Telegram</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="flex gap-2 items-center cursor-pointer">
+                                <a href="malito:contato@blackconversa.com.br" className="flex gap-2 items-center cursor-pointer">
                                     <MdEmail className="fill-[#6326B9]" />
                                     <span className="text-[13px] text-gray-50">Email</span>
                                 </a>
